@@ -11,21 +11,28 @@
 body{margin:0;background:#0F0F0F}
 a{color:#E9DCC0}a:hover{color:#FFFFFF}
 </style>
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
 <div style="width: 100%; background: #0F0F0F; color: #F3EBDD; font-family: Inter, system-ui, sans-serif; font-size: 16px; line-height: 1.6">
 
-<header style="border-bottom: 1px solid #262626; background: #0F0F0F">
-<div style="max-width: 1200px; margin: 0 auto; padding: 14px clamp(20px, 5vw, 64px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px">
-<a href="index.html" aria-label="Laundry Lounge home" style="display: block; line-height: 0"><img src="images/logo.jpg" alt="Laundry Lounge" style="height: 48px; width: auto; display: block"></a>
-<nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 26px; font-family: 'Josefin Sans', sans-serif; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase">
-<a href="prices.html" style="text-decoration: none; padding: 12px 0">Prices</a>
-<a href="first-visit.html" style="text-decoration: none; padding: 12px 0">First visit</a>
-<a href="duvets-and-bedding.html" style="text-decoration: none; padding: 12px 0">Duvets &amp; bedding</a>
-<a href="our-story.html" style="text-decoration: none; padding: 12px 0">Our story</a>
-<a href="contact.html" aria-current="page" style="text-decoration: none; padding: 12px 0; color: #35C2DA; border-bottom: 1px solid #35C2DA">Contact</a>
-<a href="https://maps.google.com/?q=77+North+Street,+Bo%27ness,+EH51+9ND" target="_blank" rel="noopener" style="text-decoration: none; background: #35C2DA; color: #0F0F0F; padding: 12px 20px; border-radius: 4px; font-weight: 600">Get directions</a>
+<header class="site-header">
+<div class="hdr-inner">
+<a class="hdr-logo" href="index.html" aria-label="Laundry Lounge home"><img src="images/logo.png" alt="Laundry Lounge"></a>
+<nav class="hdr-nav" id="site-nav" aria-label="Main">
+<a href="prices.html">Prices</a>
+<a href="first-visit.html">First visit</a>
+<a href="duvets-and-bedding.html">Duvets &amp; bedding</a>
+<a href="our-story.html">Our story</a>
+<a href="contact.html" aria-current="page">Contact</a>
 </nav>
+<div class="hdr-actions">
+<a class="btn-dir" href="https://maps.google.com/?q=77+North+Street,+Bo%27ness,+EH51+9ND" target="_blank" rel="noopener">Get directions</a>
+<button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+<svg class="ic-open" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+<svg class="ic-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+</button>
+</div>
 </div>
 </header>
 
@@ -117,7 +124,7 @@ a{color:#E9DCC0}a:hover{color:#FFFFFF}
 <footer style="background: #0A0A0A; border-top: 1px solid #262626">
 <div style="max-width: 1200px; margin: 0 auto; padding: 48px clamp(20px, 5vw, 64px); display: flex; flex-wrap: wrap; gap: 32px 56px; justify-content: space-between; align-items: flex-start">
 <div style="display: flex; flex-direction: column; gap: 14px">
-<img src="images/logo.jpg" alt="Laundry Lounge" style="height: 40px; width: auto; display: block">
+<img src="images/logo.png" alt="Laundry Lounge" style="height: 40px; width: auto; display: block">
 <p style="margin: 0; font-family: 'Josefin Sans', sans-serif; letter-spacing: 0.3em; font-size: 14px; color: #E9DCC0">WASH · DRY · RELAX</p>
 </div>
 <div style="display: flex; flex-wrap: wrap; gap: 32px 56px; font-size: 15px; color: #A8A39A">
@@ -130,5 +137,10 @@ a{color:#E9DCC0}a:hover{color:#FFFFFF}
 </footer>
 
 </div>
+<div class="mobile-bar">
+<a class="mb-primary" href="https://maps.google.com/?q=77+North+Street,+Bo%27ness,+EH51+9ND" target="_blank" rel="noopener">Get directions</a>
+<a class="mb-secondary" href="prices.html">View prices</a>
+</div>
+<script src="assets/site.js"></script>
 </body>
 </html>
