@@ -59,3 +59,22 @@ html{scroll-behavior:smooth}
   .h-ctas{display:none !important} /* same two buttons live in the sticky bar */
   .h-addr{order:6}
 }
+
+/* ---------- Google rating badge ---------- */
+.rating-badge{display:inline-flex;align-items:center;gap:10px;align-self:flex-start;text-decoration:none;
+  border:1px solid #3A3A3A;border-radius:999px;padding:7px 14px 7px 12px;font-family:Inter,system-ui,sans-serif;font-size:14px;line-height:1.2;color:#F3EBDD !important;background:rgba(255,255,255,.03)}
+.rating-badge:hover{border-color:#E9DCC0}
+.rb-stars{color:#F4B400;letter-spacing:2px;font-size:16px}
+.rb-text strong{font-weight:700}
+.rb-more{color:#A8A39A;text-decoration:underline;text-underline-offset:2px}
+.rating-badge.rb-light{border-color:#D9D2C4;background:#FFFFFF;color:#1A1A1A !important}
+.rating-badge.rb-light .rb-more{color:#5A554C}
+.rating-badge.rb-small{font-size:13px;padding:5px 12px 5px 10px}
+.rating-badge.rb-small .rb-stars{font-size:14px}
+@media (max-width: 760px){
+  .h-rating{order:4}
+  .hero .h-chips{order:5}
+  .hero .h-sub{order:6}
+  .hero .h-addr{order:7}
+  .rb-more{display:none}
+}
